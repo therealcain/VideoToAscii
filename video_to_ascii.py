@@ -33,7 +33,7 @@ def main():
         # Frame still on
         if ret:
             # Resize the frame to the desired dimensions
-            resized = cv2.resize(gray, RESIZED_DIMENSIONS)
+            resized = cv2.resize(frame, RESIZED_DIMENSIONS)
 
             # Convert the frame to Gray Scale
             gray = cv2.cvtColor(resized, cv2.COLOR_BGR2GRAY)
